@@ -6,8 +6,8 @@
 #模块二,实验：
 扩展学习一：
 AI-for-Security-Learning:https://github.com/404notf0und/AI-for-Security-Learning
-https://github.com/thu-coai/Safety-Prompts.git
-扩展学习二：安全分类体系及统计
+
+
 
 扩展学习三：Awesome-LLM4Security
 https://github.com/liu673/Awesome-LLM4Security.git
@@ -178,14 +178,15 @@ https://testercc.github.io/sec_research/ai_sec/
 
 #模块五：全生命周期
 
-docker run -it -p 8888:8888 aix360_docker:latest bash
 #模块六：标准与评估
 一：suerclue-safety:https://github.com/CLUEbenchmark/SuperCLUE-Safety
 二：SuperCLUE-Safe:https://github.com/CLUEbenchmark/SuperCLUE
 三：复旦大学 通用大模型安全基准测试集：https://github.com/WhitzardIndex/WhitzardBench-2024A
-实验：
-https://github.com/msoedov/agentic_security
 
+实验一：开源 Agentic LLM 漏洞扫描程序
+https://github.com/msoedov/agentic_security
+扩展学习：安全分类体系及统计
+https://github.com/thu-coai/Safety-Prompts.git
 #模块七：chatgpt
 扩展学习：敏感词库项目 Sensitive-lexicon
 https://github.com/konsheng/Sensitive-lexicon.git
@@ -195,6 +196,8 @@ https://github.com/konsheng/Sensitive-lexicon.git
 
 #模块八：案例
 AI 公平 360 :https://github.com/Trusted-AI/AIF360
+docker run -it -p 8888:8888 aix360_docker:latest bash
+
 #模块九：伦理道德与未来
 扩展学习一：
 可信AI
