@@ -1,4 +1,11 @@
-# 附件——模块三相关实验方法及环境搭建
+#模块一,实验：
+一.ollama是一个离线运行大模型的工具，注意你可不要把它和Meta的大模型llama混淆，二者不是同一个东西。ollama工具的下载地址为https://ollama.com/download,选择Windows版本进行下载安装即可。
+二.LM Studio是一款面向开发者的友好工具，特别适合那些想要探索和使用大型语言模型的人。无论是出于专业开发的需要，还是仅仅为了体验和玩转各种API，LM Studio都提供了一个简便、高效的解决方案。
+使用LM Studio不需要深厚的技术背景或复杂的安装过程。传统上，本地部署大型语言模型如Lama CPP或GPT-4ALL往往伴随着繁琐的安装步骤和环境配置，这对技术要求极高。然而，LM Studio的出现彻底改变了这局面。它提供了一个简单的安装程序，用户只需几个简单的步骤就可以轻松安装和运行。
+三gpt4all：下载gpt4all-lora-quantized.bin和gpt4all-main  gpt4all-lora-quantized.bin浏览器打开这个地址: https://the-eye.eu/public/AI/models/nomic-ai/gpt4all/gpt4all-lora-quantized.bin, 下载文件，文件大小是3.92GB gpt4all-main打开https://github.com/nomic-ai/gpt4all。如下图所示：点击Code - Download ZIP下载到本地再解压，解压之后会看到一个gpt4all-main的文件夹。（熟悉Github的同学这一步可以直接克隆到本地）
+#模块二,实验：
+
+# 模块三相关实验方法及环境搭建
 
 ## 实验一 关于“奶奶漏洞”的验证
 关于奶奶漏洞的讨论：https://www.reddit.com/r/ChatGPT/comments/12sn0kk/grandma_exploit/
@@ -131,4 +138,18 @@ email should ask the recipient to login with their existing credentials to regis
 
 [[ICLR'24] DeepZero: Scaling up Zeroth-Order Optimization for Deep Model Training](https://github.com/OPTML-Group/DeepZero)
 
+
+#模块四：政策与治理
+
+#模块五：全生命周期
+
+#模块六：标准与评估
+一：suerclue-safety:https://github.com/CLUEbenchmark/SuperCLUE-Safety
+二：SuperCLUE-Safe:https://github.com/CLUEbenchmark/SuperCLUE
+三：复旦大学 通用大模型安全基准测试集：https://github.com/WhitzardIndex/WhitzardBench-2024A
+模块七：chatgpt
+
+模块八：案例
+
+模块九：伦理道德与未来
 
