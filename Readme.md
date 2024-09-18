@@ -177,13 +177,14 @@ email should ask the recipient to login with their existing credentials to regis
 https://testercc.github.io/sec_research/ai_sec/
 
 #模块五：全生命周期
-AI Fairness 360 (AIF360)
-https://github.com/Trusted-AI/AIF360
+
 docker run -it -p 8888:8888 aix360_docker:latest bash
 #模块六：标准与评估
 一：suerclue-safety:https://github.com/CLUEbenchmark/SuperCLUE-Safety
 二：SuperCLUE-Safe:https://github.com/CLUEbenchmark/SuperCLUE
 三：复旦大学 通用大模型安全基准测试集：https://github.com/WhitzardIndex/WhitzardBench-2024A
+实验：
+https://github.com/msoedov/agentic_security
 
 #模块七：chatgpt
 扩展学习：敏感词库项目 Sensitive-lexicon
@@ -193,8 +194,9 @@ https://github.com/konsheng/Sensitive-lexicon.git
 关于Do-anything-now（DAN模式）以及其它越狱模式的提示可以参考：[ChatGPT_DAN](https://github.com/0xk1h0/ChatGPT_DAN)
 
 #模块八：案例
-
+AI 公平 360 :https://github.com/Trusted-AI/AIF360
 #模块九：伦理道德与未来
 扩展学习一：
 可信AI
 https://github.com/Trusted-AI/adversarial-robustness-toolbox/blob/main/README-cn.md
+https://github.com/Trusted-AI/adversarial-robustness-toolbox.git
