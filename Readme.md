@@ -6,8 +6,9 @@
 使用LM Studio不需要深厚的技术背景或复杂的安装过程。传统上，本地部署大型语言模型如Lama CPP或GPT-4ALL往往伴随着繁琐的安装步骤和环境配置，这对技术要求极高。然而，LM Studio的出现彻底改变了这局面。它提供了一个简单的安装程序，用户只需几个简单的步骤就可以轻松安装和运行。
 三gpt4all：下载gpt4all-lora-quantized.bin和gpt4all-main  gpt4all-lora-quantized.bin浏览器打开这个地址: https://the-eye.eu/public/AI/models/nomic-ai/gpt4all/gpt4all-lora-quantized.bin, 下载文件，文件大小是3.92GB gpt4all-main打开https://github.com/nomic-ai/gpt4all。如下图所示：点击Code - Download ZIP下载到本地再解压，解压之后会看到一个gpt4all-main的文件夹。（熟悉Github的同学这一步可以直接克隆到本地）
 
-四：基于RAN 
+四：基于RNN chatrwkv
 git clone https://github.com/soulteary/docker-ChatRWKV.git
+docker build -t soulteary/model:chatrwkv . -f docker/Dockerfile
 
 
 ## 模块二,风险与挑战
