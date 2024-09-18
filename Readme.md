@@ -8,7 +8,11 @@
 
 四：基于RNN chatrwkv
 git clone https://github.com/soulteary/docker-ChatRWKV.git
+
 docker build -t soulteary/model:chatrwkv . -f docker/Dockerfile
+
+docker run --gpus all --ipc=host --ulimit memlock=-1 --ulimit stack=67108864 --rm -it -p 7860:7860 soulteary/model:chatrwkv
+
 
 
 ## 模块二,风险与挑战
