@@ -188,6 +188,9 @@ https://github.com/msoedov/agentic_security
 扩展学习：安全分类体系及统计
 https://github.com/thu-coai/Safety-Prompts.git
 #模块七：chatgpt
+中国大模型列表 Awesome LLMs In China
+https://github.com/wgwang/awesome-LLMs-In-China
+
 扩展学习：敏感词库项目 Sensitive-lexicon
 https://github.com/konsheng/Sensitive-lexicon.git
 
