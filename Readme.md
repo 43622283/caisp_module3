@@ -14,6 +14,41 @@ git clone https://github.com/soulteary/docker-ChatRWKV.git
 docker build -t soulteary/model:chatrwkv . -f docker/Dockerfile
 
 docker run --gpus all --ipc=host --ulimit memlock=-1 --ulimit stack=67108864 --rm -it -p 7860:7860 soulteary/model:chatrwkv
+------------------------train.py-----------------------
+python train.py 
+    --load_model	RWKV预训练的底模型.pth （需要带上.pth后缀）
+    --proj_dir /path/save_pth	最后训练好的pth保存的路径，注意不要以 / 结尾，否则会出现找不到目录
+    --data_file /path/file	预处理语料数据（如果是binidx语料，不需要加bin或idx，只要文件名）
+     --data_type binidx	语料的格式，目前支持"utf-8", "utf-16le", "numpy", "binidx", "dummy", "wds_img", "uint16"
+     --vocab_size 50277	词表大小，格式转换的时候，最后返回的一个数值，txt数据的时候可以设置为0表示自动计算
+     --ctx_len 1024（看显存，越大越好，模型文件名有最大ctx_len） 
+     --accumulate_grad_batches 8  （貌似已废用）
+     --epoch_steps 1000  指每个epoch跑1000步	
+     --epoch_count 20 指跑20个epoch，但是在rwkv中不会自动停止训练，需要人工停止，所以这个参数没什么大作用
+     --epoch_begin 0	epoch开始值，表示从第N个epoch开始加载
+     --epoch_save 5	训练第几轮开始自动保存，5表示每5轮epoch自动保存一个pth模型文件
+     --micro_bsz 1	  微型批次大小（每个GPU的批次大小）（改大应该会更好些，显存占用更大） 
+     --n_layer 32（看模型，Pile上有介绍） 
+     --n_embd 2560（看模型，Pile上有介绍） 
+     --pre_ffn 0   用ffn替换第一个att层（有时更好）
+     --head_qk 0 	headQK技巧
+     --lr_init 6e-4	6e-4表示L12-D768，4e-4表示L24-D1024，3e-4表示L24-D2048
+     --lr_final 1e-5 
+     --warmup_steps 0 预热步骤，如果你加载了一个模型，就试试50
+     --beta1 0.9 
+     --beta2 0.999  当你的模型接近收敛时使用0.999
+     --adam_eps 1e-8 
+     --accelerator gpu  目前有gpu、cpu，但是正常情况下cpu是无法支持training的
+     --devices 1 （单卡为1，多卡就按照对应的卡数来填写，比如8卡就填写8） 
+     --precision fp16  策略精度，目前支持"fp32", "tf32", "fp16", "bf16"
+     --strategy deepspeed_stage_2  这是lightning吃的策略参数，顾名思义是deepspeed的stage 2
+     --grad_cp 1（开启加速） 配置这个显存量，0应该可以直接全量
+
+更多参数介绍可以看train.py脚本中的代码 train.py脚本中的--precision参数参考以下，fp16是训练最快
+运行已Training好的模型
+切换train.py同级目录下, 运行 chat.py 或者 在Chat RWKV的v2中运行 chat.py
+python chat.py
+脚本的参数与ChatRWKV差不多，主要就修改下MODEL_NAME 模型路径值，就是以上--proj_dir 的路径
 
 
 
