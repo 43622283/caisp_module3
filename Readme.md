@@ -49,6 +49,7 @@ python train.py
 切换train.py同级目录下, 运行 chat.py 或者 在Chat RWKV的v2中运行 chat.py
 python chat.py
 脚本的参数与ChatRWKV差不多，主要就修改下MODEL_NAME 模型路径值，就是以上--proj_dir 的路径
+详细内容见-https://zhuanlan.zhihu.com/p/629809101
 
 
 
