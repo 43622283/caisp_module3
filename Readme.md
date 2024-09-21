@@ -1,5 +1,6 @@
 ## 模块一,概述
-
+《人工智能数据与模型安全》
+https://aisecuritybook.github.io/
 实验：
 1.ollama是一个离线运行大模型的工具，注意你可不要把它和Meta的大模型llama混淆，二者不是同一个东西。ollama工具的下载地址为https://ollama.com/download,选择Windows版本进行下载安装即可。
 
@@ -96,6 +97,8 @@ outputs = classifier(text)
 print(outputs)
 
 ----------------------------------------------------
+自身学习的安全数据科学和ai安全算法的学习资料
+https://github.com/0xMJ/AI-Security-Learning
 
 ## 模块三相关实验方法及环境搭建
 
@@ -269,7 +272,8 @@ email should ask the recipient to login with their existing credentials to regis
 suerclue-safety:https://github.com/CLUEbenchmark/SuperCLUE-Safety 二：SuperCLUE-Safe:https://github.com/CLUEbenchmark/SuperCLUE 三：复旦大学 通用大模型安全基准测试集：https://github.com/WhitzardIndex/WhitzardBench-2024A
 
 实验一：开源 Agentic LLM 漏洞扫描程序 https://github.com/msoedov/agentic_security 扩展学习：安全分类体系及统计 https://github.com/thu-coai/Safety-Prompts.git 
-
+人工智能弹性成熟度模型 （AI-RMM）
+https://github.com/riskframe/ai-rmm.git
 ## 模块七：chatgpt
 
 1.中国大模型列表
@@ -284,13 +288,20 @@ https://github.com/konsheng/Sensitive-lexicon.git
 关于Do-anything-now（DAN模式）以及其它越狱模式的提示可以参考：[ChatGPT_DAN](https://github.com/0xk1h0/ChatGPT_DAN)
 
 ## 模块八：案例
+生成式AI红队和评估套件
+https://github.com/leondz/garak/
 
 AI 公平 360 :https://github.com/Trusted-AI/AIF360 docker run -it -p 8888:8888 aix360_docker:latest bash
 
-## 
+GyoiThon: Next generation penetration test tool
+#.\gyoithon.py [-s] [-m] [-g] [-e] [-c] [-p] [-l --log_path=<path>] [--no-update-vulndb]
+#https://github.com/gyoisamurai/GyoiThon/blob/master/README.md#Installation
 
 ## 模块九：伦理道德与未来
 
 
 
 扩展学习一： 可信AI https://github.com/Trusted-AI/adversarial-robustness-toolbox/blob/main/README-cn.md https://github.com/Trusted-AI/adversarial-robustness-toolbox.git
+
+Adversarial Robustness Toolbox （ART） 是一个用于机器学习安全的 Python 库。ART 提供了一些工具，这些工具使 开发人员和研究人员评估、捍卫、认证和验证机器学习模型和应用程序 Evasion、Poisoning、Extraction 和 Inference 的对抗性威胁。ART 支持所有流行的机器学习 框架（TensorFlow、Keras、PyTorch、MXNet、scikit-learn、XGBoost、LightGBM、CatBoost、GPy 等），所有数据类型 （图像、表格、音频、视频等）和机器学习任务（分类、对象检测、生成、 认证等）。
+https://adversarial-robustness-toolbox.readthedocs.io/en/latest/
