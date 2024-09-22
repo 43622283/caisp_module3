@@ -299,7 +299,7 @@ GyoiThon: Next generation penetration test tool
 
 ## 模块九：伦理道德与未来
 
-
+Privacy Meter 是一个开源库，用于审计统计和机器学习算法中的数据隐私。
 
 扩展学习一： 可信AI https://github.com/Trusted-AI/adversarial-robustness-toolbox/blob/main/README-cn.md https://github.com/Trusted-AI/adversarial-robustness-toolbox.git
 
