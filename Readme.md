@@ -292,6 +292,8 @@ https://github.com/konsheng/Sensitive-lexicon.git
 https://github.com/leondz/garak/
 
 AI 公平 360 :https://github.com/Trusted-AI/AIF360 docker run -it -p 8888:8888 aix360_docker:latest bash
+AI漏洞 https://github.com/protectai/ai-exploits?tab=readme-ov-file
+https://github.com/protectai/ai-exploits?tab=readme-ov-file
 
 GyoiThon: Next generation penetration test tool
 #.\gyoithon.py [-s] [-m] [-g] [-e] [-c] [-p] [-l --log_path=<path>] [--no-update-vulndb]
@@ -299,7 +301,12 @@ GyoiThon: Next generation penetration test tool
 
 ## 模块九：伦理道德与未来
 
+
+通用机器学习应用的偏差测试
+https://github.com/pymetrics/audit-ai
+
 Privacy Meter 是一个开源库，用于审计统计和机器学习算法中的数据隐私。
+https://github.com/privacytrustlab/ml_privacy_meter
 
 扩展学习一： 可信AI https://github.com/Trusted-AI/adversarial-robustness-toolbox/blob/main/README-cn.md https://github.com/Trusted-AI/adversarial-robustness-toolbox.git
 
